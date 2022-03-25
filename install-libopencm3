@@ -1,0 +1,16 @@
+#!/bin/sh
+
+LIBOPENCM3_PATH=./libopencm3
+TARGETS=stm32/l4
+
+
+# Fetch libopencm3 repository if required
+if [ ! -d "$LIBOPENCM3_PATH" ]; then
+	git clone https://github.com/libopencm3/libopencm3.git
+fi
+
+# Get into libopencm3 repository
+cd $LIBOPENCM3_PATH
+
+# Build the library for the relevant targets
+make TARGETS=$TARGETS
