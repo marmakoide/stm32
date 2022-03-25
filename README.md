@@ -26,6 +26,12 @@ handle STM32 MCUs. As it is not advised to install libopencm3 system-wide, I ins
 root of this repository. I made a (very naive) script to automate the installation process,
 [install-libopencm3](install-libopencm3).
 
+
+## Projects
+
+* [led-blinker](projects/led-blinker) : blinks the STM32L476RG on-board led
+
+
 ## Authors
 
 * **Alexandre Devert** - [marmakoide](https://github.com/marmakoide)

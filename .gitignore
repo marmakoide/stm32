@@ -1,2 +1,7 @@
 /docs
+/libopencm3
 *.o
+*.elf
+*.hex
+*.d
+*.map
